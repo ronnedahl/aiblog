@@ -426,30 +426,63 @@ margin-bottom: 10px;
 
 footer{
 
-    padding: 40px 100px 40px 100px;
+    
     background: rgb(0,36,2);
 background: linear-gradient(90deg, rgba(0,36,2,1) 0%, rgba(56,121,9,1) 90%, rgba(0,0,0,1) 100%);
-
+height: 150px;
 }
 
 .row-footer{
 
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 3;
 }
 
 .side2{
 
-    margin-left:25px;
+  margin-top:20px;  
+
 }
 
-.logo-footer{
-    position: relative;
-    left: 190px;
-    bottom: 80px;
+.side1{
+
+margin-top:20px;
+   
+    
+}
+
+.logo-footer img{
+    
+   
+ width: 170px;
+ height: 120px;  
    
    
-    padding-bottom: 50px;
+}
+
+.logo-footer {
+
+    margin-top: 8px;
+}
+
+.about-me-section{
+    
+}
+
+.text-footer{
+
+    width: 300px;
+    height: 170px;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+.text-footer p{
+
+    color: white;
+    font-size:12px;
 }
 
 /*mediaqueries start here*/
