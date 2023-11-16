@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Yatra+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,200;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
-
+    
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'roboto', sans-serif;
 
 
 }
@@ -18,7 +18,7 @@ body {
 
 p {
 
-    line-height: 1.5;
+    line-height: 1.6em;
     color: white;
 }
 
@@ -197,7 +197,7 @@ h2 {
     font-size: 1.6rem;
    
     margin-top: 15px;
-    color: black;
+    color: #333333;
 }
 
 
@@ -206,15 +206,19 @@ h2 {
     font-size: 1.4rem;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: black;
+    color:#333333;
 }
 
 h4,
 h5 {
 
-    color: black;
+    color:#333333;
 }
 
+#blog-text{
+
+    max-width: 1000px;
+}
 
 
 
@@ -266,7 +270,7 @@ h5 {
 
 #blog-text h1 {
 
-    color: black;
+    color: #333333;
     font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
@@ -282,24 +286,24 @@ h5 {
 p {
 
     margin: 10px 10px 10px 0px;
-    color: black;
-    font-size: 14px;
+    color: #333333;
+    font-size: 15px;
 
 }
 
 #bild-blog {
-
+    max-width: 1000px;
     width: 100%;
     height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20x;
+    margin-bottom: 20px;
 }
 
 #blog-text li {
 
     margin-bottom: 5px;
     margin-left: 30px;
-    color:black;
+    color:#333333;
 }
 
 #blog-text li {
@@ -424,20 +428,86 @@ margin-bottom: 10px;
     padding-bottom: 15px;
 }
 
+/*footer starts here*/
 footer{
-
-    
-    background: rgb(0,36,2);
+	background: rgb(0,36,2);
 background: linear-gradient(90deg, rgba(0,36,2,1) 0%, rgba(56,121,9,1) 90%, rgba(0,0,0,1) 100%);
-height: 150px;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #fff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: rgb(0,36,2);
+background: linear-gradient(90deg, rgba(0,36,2,1) 0%, rgba(56,121,9,1) 90%, rgba(0,0,0,1) 100%);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.row .footer-col p{
+
+    color: #fff;
 }
 
-.row-footer{
-
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    gap: 3;
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
 }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
 
 .side2{
 
@@ -452,38 +522,28 @@ margin-top:20px;
     
 }
 
-.logo-footer img{
-    
-   
- width: 170px;
- height: 120px;  
-   
-   
+.sci li{
+
+color: black;
 }
 
-.logo-footer {
+.sec li a{
 
-    margin-top: 8px;
+    color: black;
 }
 
-.about-me-section{
-    
-}
 
-.text-footer{
 
-    width: 300px;
-    height: 170px;
-    margin-left: 50px;
-    margin-top: 20px;
-    
-}
 
-.text-footer p{
 
-    color: white;
-    font-size:12px;
-}
+
+
+
+
+
+
+
+
 
 /*mediaqueries start here*/
 
@@ -639,10 +699,10 @@ h2{
     font-size: 1.3rem;
 }
 
+.row .col-1 h1{
 
-    
-
-
-
+    font-size:1.6rem;
+    line-height:2rem;
+}
 
 }
